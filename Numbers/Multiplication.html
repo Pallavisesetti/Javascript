@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+
+
+        result = 0
+        function onClickMultiplication() {
+            debugger;
+            var num1 = document.getElementById("txtFirstNumber").value;
+            result=num1 * num1;
+            alert(result);
+
+        }
+        function onClickAddition() {
+            debugger;
+            var firstNumber = Number(document.getElementById("txtFirstNumber").value);
+            var secondNumber = Number(document.getElementById("txtSecondNumber").value);
+            result=firstNumber + secondNumber
+            alert(result);
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>This is an operation of Multiplication</h1>
+    <label>Input No</label>
+    <input id="txtFirstNumber" type="number"><br><br>
+    <label>Input no</label>
+    <input id="txtSecondNumber" type="number"><br><br>
+    <button id="btnMultiplication" onclick="onClickMultiplication()"> square</button>
+    <button id="btnAddition" onclick="onClickAddition()">Add</button>
+</body>
+
+</html>

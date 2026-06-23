@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modulus Operator</title>
+        <script>
+            
+            function onClickModulus(){
+                debugger;
+                var num1=Number(document.getElementById("txtNumber1").value);
+                var num2=Number(document.getElementById("txtNumber2").value);
+                result=num1%num2;
+                alert(result);
+                
+            }
+        </script>
+    </head>
+     <body>
+           <h1>Modulus OPeration is Working.....</h1>
+           <label>Number 1</label>
+           <input id="txtNumber1" type="number"><br><br>
+           <label>Number 2</label>
+           <input id="txtNumber2" type="number"><br><br>
+           <button id="btnModulus" onclick="onClickModulus()">Modulus</button>
+        </body>
+</html>
