@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickAddition(){
+                debugger;
+                
+                var firstNum=Number(document.getElementById("txtFirstNum").value);
+                var secondNum=Number(document.getElementById("txtSecondNum").value);
+            
+            alert(firstNum+secondNum);
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>This is an Addition Operation</h1>
+        <label type="number" id="lblFirstNumber">FirstNumber</label>
+        <input type="number" id="txtFirstNum"></input><br><br>
+        <label type="number" id="lblSecondNumber">SecondNumber</label>
+        <input type="number" id="txtSecondNum"></input><br><br>
+        <button id="btnAddition" onclick="onClickAddition()">Addition</button>
+        
+    </body>
+</html>
