@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickIncreement(){
+                debugger;
+                var num1=Number(document.getElementById("txtIncrease").value);
+                num1++;
+                alert(num1);
+            }
+            function onClickDecreement(){
+                debugger;
+                var num2=Number(document.getElementById("txtIncrease").value);
+                num2--;
+                alert(num2);
+            }
+        </script>
+        </head>
+        <body>
+            <h1>Increement Operator</h1>
+            <label>Number1</label>
+            <input type="number" id="txtIncrease">
+             
+            <button id="btnIncreement" onclick="onClickIncreement()">Increement operation</button>
+            <button id="btnDecreement" onclick="onClickDecreement()">Decreement operation</button>
+        </body>
+    
+</html>
