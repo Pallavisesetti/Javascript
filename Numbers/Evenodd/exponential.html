@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+        function onClickPower(){
+            debugger;
+            var number=Number(document.getElementById("txtNumber").value);
+            var power=Number(document.getElementById("txtPower").value);
+            result=number**power;
+            alert(result);
+        }
+     </script>
+    </head>
+    <body>
+        <h1>Exponential Function</h1>
+        <label>Number</label>
+        <input type="text" id="txtNumber"><br><br>
+        <label>Power</label>
+        <input type="text" id="txtPower"><br><br>
+        <button onclick="onClickPower()">Power</button>
+    </body>
+</html>

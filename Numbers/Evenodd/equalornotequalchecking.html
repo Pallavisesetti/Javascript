@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function onClickChecking(){
+            debugger;
+            var inputnumber=document.getElementById("txtNumber").value;
+            if(inputnumber%5==0){
+                alert("true");
+            }
+            if(inputnumber%5!==0){
+                alert("false");
+            }
+
+        }
+        </script>
+        </head>
+        <body>
+        <h1>Equal or not equal checking</h1>
+        <label>Input number</label>
+        <input type="text" id="txtNumber">
+        <button onclick="onClickChecking()">Checking</button>
+        </body>
+    </head>
+</html>
