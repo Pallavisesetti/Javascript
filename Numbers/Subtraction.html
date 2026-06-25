@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
+    <script>
+        function onClickToknow(){
             debugger;
-            var num1=50;
-            var num2=30;
-            var total=num1-num2;
-            alert(total);
-        </script>
+            var age=Number(document.getElementById("txtAge").value);
+            if(age<21){
+                alert("Pallavi is a beautiful")
+            }
+            if(age!=21){
+                alert("Pallavi is Great")
+            }
+        }
+    </script>
     </head>
     <body>
-        <h1>This is the operation of Subtarction</h1>
+        <h1>About Mine</h1>
+        <label>Age</label>
+        <input id="txtAge" placeholder="Enter your age">
+        <button onclick="onClickToknow()">To Know</button>
+
     </body>
 </html>
