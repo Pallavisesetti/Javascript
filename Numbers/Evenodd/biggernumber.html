@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+        function onClickBigger(){
+            debugger;
+            var a=Number(document.getElementById("txtNumberone").value);
+            var b=Number(document.getElementById("txtNumbertwo").value);
+            if(a>b){
+                alert("a is bigger")
+            }
+            if(a<b){
+                    alert("second number is bigger" +b)
+                }
+            }
+            
+        
+     </script>
+    </head>
+    <body>
+        <h1>Find the big number</h1>
+        <label>Number 1</label>
+        <input type="text" id="txtNumberone"><br><br>
+        <label>Number 2</label>
+        <input type="text" id="txtNumbertwo"><br><br>
+        <button onclick="onClickBigger()">Bigger</button>
+    </body>
+</html>
+

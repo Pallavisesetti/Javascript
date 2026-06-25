@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+        function onClickPrime(){
+            debugger;
+            var a=Number(document.getElementById("txtPrime").value);
+            if(a<=1){
+                alert(a + "given number is not a prime number ");
+            }if(a==2){
+                alert(a + "is a prime number")
+            }if(a%2==0){
+                alert(a + "not a prime number")
+                
+            }
+            if (a%2==1)
+                alert(a + "given number is a prime number");
+            }
+
+            
+            
+            
+        
+     </script>
+    </head>
+    <body>
+        <h1>Find prime or not</h1>
+        <label>Number 1</label>
+        <input type="text" id="txtPrime"><br><br>
+        <button onclick="onClickPrime()">Prime or not</button>
+    </body>
+</html>
+
