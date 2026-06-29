@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script>
+        function onClickSubmit(){
+            debugger;
+            var num1=Number(document.getElementById("txtNumber").value);
+            alert(Math.sign(num1));
+            alert(Math.abs(num1));
+        }
+     </script>
+    </head>
+    <body>
+        <label></label>
+        <input id="txtNumber" placeholder="enter a number">
+        <button onclick="onClickSubmit()">Click to know the value</button>
+    </body>
+</html>
