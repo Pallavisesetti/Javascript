@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+         function onClickEmi(){
+            debugger;
+            let Loan=document.getElementById("txtLoan").value;
+            let Months=document.getElementById("txtMonths").value;
+            number=(Loan/Months);
+            alert(number);
+         }
+        </script>
+    </head>
+    <body>
+        <label>Loan</label>
+        <input id="txtLoan" type="text">
+        <label>Months</label>
+        <input id="txtMonths" type="text">
+        <button onclick="onClickEmi()">EMI</button>
+    </body>
+</html>

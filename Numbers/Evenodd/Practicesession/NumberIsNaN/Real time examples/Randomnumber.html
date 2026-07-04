@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickRandom(){
+                debugger;
+                let random=document.getElementById("txtNumber").value;
+                alert(Math.floor(Math.random(random)*10)+1);
+            }
+            function onClickOtp(){
+                debugger;
+                let otp=document.getElementById("txtNumber").value;
+                alert(Math.floor(Math.random(otp)*2000)+100);
+            }
+            function onClickDice(){
+                debugger;
+                let Dice=document.getElementById("txtNumber").value;
+                alert(Math.floor(Math.random(Dice)*6)+1);
+            }
+        </script>
+    </head>
+    <body>
+        <label>Number</label>
+        <input id="txtNumber" type="text">
+        <button onclick="onClickRandom()">Random number</button>
+        <button onclick="onClickOtp()">OTP</button>
+        <button onclick="onClickDice()">Dice</button>
+    </body>
+</html>

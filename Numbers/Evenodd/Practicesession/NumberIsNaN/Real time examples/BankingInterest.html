@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+         function onClickInterest(){
+            debugger;
+            let amount=document.getElementById("txtAmount").value;
+            let rate=document.getElementById("txtRate").value;
+            let years=document.getElementById("txtYears").value;
+            number= amount * Math.pow((1 + rate / 100), years);
+            alert(number);
+         }
+        </script>
+    </head>
+    <body>
+        <label>Amount</label>
+        <input id="txtAmount">
+        <label>Rate</label>
+        <input id="txtRate">
+        <label>Years</label>
+        <input id="txtYears">
+
+        <button onclick="onClickInterest()">Interest</button>
+    </body>
+</html>

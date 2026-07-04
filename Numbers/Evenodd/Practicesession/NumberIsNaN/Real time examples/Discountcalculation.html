@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+         function onClickDiscount(){
+            debugger;
+            let price=document.getElementById("txtPrice").value;
+            let discount=document.getElementById("txtDiscount").value;
+            finalprice=price-(price*discount/100)
+            alert(finalprice);
+         }
+        </script>
+    </head>
+    <body>
+        <label>Price</label>
+        <input id="txtPrice" type="text">
+        <label>Discount</label>
+        <input id="txtDiscount" type="text">
+        <button onclick="onClickDiscount()">Discount</button>
+    </body>
+</html>

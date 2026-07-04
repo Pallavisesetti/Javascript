@@ -4,18 +4,19 @@
         debugger;
         var a=document.getElementById("txtCheckNumber").value;
         number=Number(a);
-        alert(number);
+        document.getElementById("pResult").innerHTML=number;
     }
      function onClickCheckingParseInt(){
         debugger;
         var a=document.getElementById("txtCheckNumber").value;
-        number=parseInt(a);
-        alert(number);
+        number1=parseInt(a);
+        document.getElementById("pResult1").innerHTML=number1;
+        
     }
      function onClickCheckingParseFloat(){
         debugger;
         var a=document.getElementById("txtCheckNumber").value;
-        number=parseFloat(a);
-        alert(number);
+        number2=parseFloat(a);
+        document.getElementById("pResult2").innerHTML=number2;
     }
      
