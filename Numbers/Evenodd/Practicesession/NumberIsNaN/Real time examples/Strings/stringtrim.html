@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickTrim(){
+            debugger;
+            var name1=document.getElementById("txtName").value;
+            console.log(name1.trim());
+            Name1=name1
+            alert(Name1);
+            }
+            function onClickIndexof(){
+                debugger;
+                var name2=document.getElementById("txtName").value;
+                Name2=name2.indexOf("i");
+                alert(Name2);
+            }
+            function onClickCharacterposition(){
+                debugger;
+                var name3=document.getElementById("txtName").value;
+                Name3=name3.indexOf("h");
+                alert(Name3);
+            }
+            function onClickLength(){
+                debugger;
+                var name4=document.getElementById("txtName").value;
+                Name4=name4.length;
+                alert(Name4);
+            }
+            function onClickUppercase(){
+                debugger;
+                var name5=document.getElementById("txtName").value;
+                Name5=name5.toUpperCase();
+                alert(Name5);
+            }
+             function onClickLowercase(){
+                debugger;
+                var name6=document.getElementById("txtName").value;
+                Name6=name6.toLowerCase();
+                alert(Name6);
+             }
+            </script>
+        </head>
+        <body>
+            <label>Name</label>
+            <input type="text" id="txtName"><br><br>     
+            <button onclick="onClickTrim()">Trim</button>
+            <button onclick="onClickIndexof()">indexOf</button>
+            <button onclick="onClickCharacterposition()">character position</button>
+            <button onclick="onClickLength()">Length</button>
+            <button onclick="onClickUppercase()">Uppercase</button>
+            <button onclick="onClickLowercase()">Lowercase</button>
+        </body>
+</html>

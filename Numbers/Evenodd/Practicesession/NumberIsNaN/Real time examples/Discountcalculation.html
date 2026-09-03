@@ -7,7 +7,7 @@
             let price=document.getElementById("txtPrice").value;
             let discount=document.getElementById("txtDiscount").value;
             finalprice=price-(price*discount/100)
-            alert(finalprice);
+            document.getElementById("pResult").innerHTML=finalprice;
          }
         </script>
     </head>
@@ -17,5 +17,6 @@
         <label>Discount</label>
         <input id="txtDiscount" type="text">
         <button onclick="onClickDiscount()">Discount</button>
+        <p id="pResult" ></p>
     </body>
 </html>
