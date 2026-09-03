@@ -5,17 +5,22 @@
          function onClickHighest(){
             debugger;
             let Highest=Math.max(29,56,89,99,567,)
-            alert(Highest);
+            number=Highest;
+            document.getElementById("pResult").innerHTML=number;
          }
          function onClickSmallest(){
             debugger;
             let Smallest=Math.min(29,56,89,99,567,)
-            alert(Smallest);
+            number1=Smallest;
+            document.getElementById("pResult1").innerHTML=number1;
+            
          }
         </script>
     </head>
     <body>
         <button onclick="onClickHighest()">Highest</button>
         <button onclick="onClickSmallest()">Smallest</button>
+        <p id="pResult"></p>
+        <p id="pResult1"></p>
     </body>
 </html>

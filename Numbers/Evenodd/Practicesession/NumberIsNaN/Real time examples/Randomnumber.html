@@ -6,16 +6,19 @@
                 debugger;
                 let random=document.getElementById("txtNumber").value;
                 alert(Math.floor(Math.random(random)*10)+1);
+                document.getElementById("pResult").innerHTML=(Math.floor(Math.random(random)*10)+1);
             }
             function onClickOtp(){
                 debugger;
                 let otp=document.getElementById("txtNumber").value;
                 alert(Math.floor(Math.random(otp)*2000)+100);
+                document.getElementById("pResult1").innerHTML=(Math.floor(Math.random(random)*10)+1);
             }
             function onClickDice(){
                 debugger;
                 let Dice=document.getElementById("txtNumber").value;
                 alert(Math.floor(Math.random(Dice)*6)+1);
+                document.getElementById("pResult2").innerHTML=(Math.floor(Math.random(random)*10)+1);
             }
         </script>
     </head>
@@ -25,5 +28,8 @@
         <button onclick="onClickRandom()">Random number</button>
         <button onclick="onClickOtp()">OTP</button>
         <button onclick="onClickDice()">Dice</button>
+        <p id="pResult" ></p>
+        <p id="pResult1" ></p>
+        <p id="pResult2" ></p>
     </body>
 </html>

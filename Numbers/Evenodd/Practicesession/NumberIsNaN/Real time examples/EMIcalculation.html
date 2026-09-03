@@ -7,7 +7,7 @@
             let Loan=document.getElementById("txtLoan").value;
             let Months=document.getElementById("txtMonths").value;
             number=(Loan/Months);
-            alert(number);
+            document.getElementById("pResult").innerHTML=number;
          }
         </script>
     </head>
@@ -17,5 +17,6 @@
         <label>Months</label>
         <input id="txtMonths" type="text">
         <button onclick="onClickEmi()">EMI</button>
+        <p id="pResult"></p>
     </body>
 </html>
