@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let animals=[];
+            function onClickPush(){
+                debugger;
+                let animal = document.getElementById("txtAnimals").value;
+                document.getElementById("txtAnimals").value = "";
+                animals.push(animal);
+                alert(animals);
+            }
+            function onClickPop(){
+                debugger;
+                animals.pop();
+                alert(animals);
+
+            }
+            function onClickShift(){
+                debugger;
+                animals.shift();
+                alert(animals);
+            }
+            function onClickUnshift(){
+                debugger;
+                let animal = document.getElementById("txtAnimals").value;
+                document.getElementById("txtAnimals").value = "";
+                animals.unshift(animal);
+                alert(animals);
+            }
+        </script>
+        </head>
+        <body>
+            <label>Animals</label>
+            <input type="text" id="txtAnimals">
+            <button onclick="onClickPush()">Push</button>
+            <button onclick="onClickPop()">pop</button>
+            <button onclick="onClickUnshift()">Unshift</button>
+            <button onclick="onClickShift()">Shift</button>
+        </body>
+    
+</html>

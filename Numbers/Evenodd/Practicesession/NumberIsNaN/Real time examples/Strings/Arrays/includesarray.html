@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+        let cities=[];
+        function onClickPush(){
+            debugger;
+            var city=document.getElementById("txtCity").value;
+            document.getElementById("txtCity").value="";
+            cities.push(city);
+            alert(cities.join(", "));        
+        }
+        function onClickSearch(){
+            debugger;
+            var search=document.getElementById("txtSearch").value;
+            document.getElementById("txtSearch").value="";
+           if(cities.includes(search)){
+            alert("true");
+           }
+           else{
+            alert("false");
+           }
+        }
+        function onClickIndexof(){
+            debugger;
+            var toknow=document.getElementById("txtIndexof").value;
+            document.getElementById("txtIndexof").value="";
+            cities.indexOf(toknow);
+            alert(cities.indexOf(toknow));
+        }
+        boy=[]
+        function onClickBoys(){
+            debugger; 
+            var boys=document.getElementById("txtBoys").value;
+            boy.push(boys);
+            alert(boy);
+        }
+        girl=[]
+        function onClickGirls(){
+            debugger;
+            var girls=document.getElementById("txtGirls").value;
+            document.getElementById("txtGirls").value=" ";
+            girl.push(girls);
+            alert(girl);
+        }
+
+        function onClickStudents(){
+            debugger
+            let all = boy.concat(girl);
+            alert(all);
+        }
+        numbers=[]
+        function onClickReverse(){
+            debugger;
+            alert(girl.reverse());
+        }
+        function onClickSort(){
+            debugger;
+            let all=girl.sort();
+            alert(all);
+
+        }
+        
+     </script>
+    </head>
+    <body>
+        <label>Cities</label>
+        <input type="text" id="txtCity">
+        <button onclick="onClickPush()">Push</button><br><br>
+        <label>search</label>
+        <input type="text" id="txtSearch">
+        <button onclick="onClickSearch()">Search</button><br><br>
+        <label>Indexof</label>
+        <input type="text" id="txtIndexof">
+        <button onclick="onClickIndexof()">Indexof</button><br><br>
+        <label>Boys</label>
+        <input type="text" id="txtBoys">
+        <button onclick="onClickBoys()">push</button><br><br>
+        <label>Girls</label>
+        <input type="text" id="txtGirls">
+        <button onclick="onClickGirls()">push</button>
+        <button onclick="onClickStudents()">Show</button>
+        <button onclick="onClickReverse()">Reverse</button>
+        <button onclick="onClickSort()">sort</button>
+        
+    </body>
+</html>

@@ -51,3 +51,39 @@ Strings
 1.string
 2.string index
 3.string length
+Function	Input	Output
+Upper case
+lowercase
+trim	string
+string
+string	modified string
+modified string
+modified string
+indexOf
+lastIndexOf
+includes
+startswith
+endswith
+slice	string
+string
+string
+string
+string
+string
+	number
+number
+Boolean
+Boolean
+Boolean
+Sliced String
+replace
+concat
+split	string
+string
+string	replaced string
+concated string
+array
+charcodeAt
+repeat	string
+string	ASCII value returned
+repeated string

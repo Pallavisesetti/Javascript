@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickRead(){
+                debugger;
+                var fruits=["Mango","apple","Orange","custard apple"];
+                let index = Number(document.getElementById("txtxInput").value);
+                fruit=fruits[index];
+                alert(fruit);
+            }
+            function onClickName(){
+                debugger;
+                var names=["Pallavi","Raju","Sesetti","Doremon"];
+                let index = Number(document.getElementById("txtxInput").value);
+                names[3]="chitti";
+                alert(names[3]);
+            }
+        </script>
+        <body>
+            <label>Input</label>
+            <input type="text" id="txtxInput">
+            <button onclick="onClickRead()">Read</button>
+            <button onclick="onClickName()">Name</button>
+
+        </body>
+    </head>
+</html>

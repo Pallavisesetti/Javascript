@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickSubmit(){
+                debugger;
+                var birds=["Parrot","sparrow","eagle","woodpeaker"];
+                alert(birds);
+                var index=Number(document.getElementById("txtIndex").value);
+                var update=(document.getElementById("txtUpdate").value);
+                
+                birds[index]=update;
+                alert(birds);
+
+            }
+            function onClickColour(){
+                debugger;
+                var colours=["blue","pink","yellow","red"]
+                alert(colours);
+               colours.push("navyblue")
+                alert(colours);
+                var index=Number(document.getElementById("txtIndex").value);
+                var update=document.getElementById("txtUpdate").value;
+                colours[index]=update;
+                alert(colours);
+
+            }
+        </script>
+        </head>
+        <body>
+            <label>Index</label>
+            <input type="text" id="txtIndex">
+            <label>Update</label>
+            <input type="text" id="txtUpdate">
+
+            <button onclick="onClickSubmit()">Submit</button>
+            <button onclick="onClickColour()">Colour</button>
+
+        </body>
+    
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickCheck(){
+                debugger;
+                var email=document.getElementById("txtEmail").value;
+                if (email.includes("@")){
+                    alert("true");
+                }
+                else{
+                    alert("false");
+                }           
+            }
+            function onClickStartswith(){
+                debugger;
+                var alphabet=document.getElementById("txtEmail").value;
+                if(alphabet.startsWith("a")){
+                    alert("true");
+                }
+                else{
+                    alert("pallavi is a good girl");
+                }
+            }
+            function onClickEndsWith(){
+                debugger;
+                var file=document.getElementById("txtEmail").value;
+                if(file.endsWith(".docx")){
+                    alert("true");
+                }
+                else{
+                    alert("false");
+                }
+            }
+            function onClickSlice(){
+                debugger;
+                var myname=document.getElementById("txtEmail").value;
+                Myname=myname.slice(-7);
+                alert(Myname);
+            }
+            function onClickReplace(){
+                debugger;
+                var surname=document.getElementById("txtEmail").value;
+                Surname=surname.replace("Pallavi", "Raju");
+                alert(Surname);
+            }
+            function onClickConcat(){
+                debugger;
+                var join=document.getElementById("txtEmail").value;
+                var joinn=document.getElementById("txtSecond").value;
+                Join=join.concat(" ",joinn);
+                alert(Join);
+            }
+            function onClickSplit(){
+                debugger;
+                var blood=document.getElementById("txtEmail").value;
+                Relation=blood.split(",");
+                alert(Relation);
+            }
+            function onClickCharcodeat(){
+                debugger;
+                var code=document.getElementById("txtEmail").value;
+                charcodeat=code.charCodeAt("S");
+                alert(charcodeat);
+                alert(" Pallavi ".repeat(3));
+            }
+        </script>
+        </head>
+        <body>
+            <label>Email</label>
+            <input type="text" id="txtEmail"><br><br>
+            <button onclick="onClickCheck()">Check Boolean</button>
+            <button onclick="onClickStartswith()">StartsWith</button>
+            <button onclick="onClickEndsWith()">endswith</button>
+            <button onclick="onClickSlice()">Slice</button>
+            <button onclick="onClickReplace()">Replace</button>
+            <button onclick="onClickConcat()">Concat</button>
+            <button onclick="onClickSplit()">Split</button>
+            <button onclick="onClickCharcodeat()">charcode</button>
+
+        </body>
+    
+</html>
