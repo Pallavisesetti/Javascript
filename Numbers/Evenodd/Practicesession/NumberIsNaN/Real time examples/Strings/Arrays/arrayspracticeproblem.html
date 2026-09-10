@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <script>
+        let Fruits=[]
+        function onClickPush(){
+            debugger;
+            let Fruit=document.getElementById("txtFruits").value;
+            document.getElementById("txtFruits").value=" ";
+            Fruits.push(Fruit);
+             alert(Fruits);
+        }
+        let Vegetables=[]
+        function onClickPush1(){
+            debugger;
+            let Vegetable=document.getElementById("txtVegetables").value;
+            document.getElementById("txtVegetables").value=" ";
+            Vegetables.push(Vegetable);
+            alert(Vegetables);
+        }
+        function onClickConcat(){
+            Fruits.concat(Vegetables);
+            alert(Fruits.concat(Vegetables));
+        }
+
+     </script>
+    </head>
+    <body>
+        <label>Fruits</label>
+        <input type="text" id="txtFruits">
+        <label>Vegetables</label>
+        <input type="text" id="txtVegetables">
+        <button onclick="onClickPush()">Push</button>
+        <button onclick="onClickPush1()">Push1</button>
+        <button onclick="onClickConcat()">Concat</button>
+    </body>
+
+</html>
