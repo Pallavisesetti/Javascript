@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+        let salary=[]
+        function onClickPush(){
+            debugger;
+            let Salary=Number(document.getElementById("txtSalary").value);
+            document.getElementById("txtSalary").value=" ";
+            salary.push(Salary);
+           document.getElementById("result").innerHTML=salary;     
+        }
+        function onClickUpdate(){
+            debugger;
+            let update=salary.map(s=s+5000);
+            document.getElementById("result1").innerHTML=update;
+        }
+       </script>
+    </head>
+    <body>
+        <label>Salary</label>
+        <input type="text" id="txtSalary">
+        <button onclick="onClickPush()">Push</button>
+        <button onclick="onClickUpdate()">Update</button>
+        <p id="result"></p>
+        <p id="result1"></p>
+
+    </body>
+</html>

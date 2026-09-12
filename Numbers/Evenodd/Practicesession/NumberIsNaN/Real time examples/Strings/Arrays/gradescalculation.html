@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function onClickCheckgrade() {
+            marks = []
+            grades = []
+            debugger;
+            var telugu = Number(document.getElementById("txtTelugu").value);
+            var hindi = Number(document.getElementById("txtHindi").value);
+            var english = Number(document.getElementById("txtEnglish").value);
+            var maths = Number(document.getElementById("txtMaths").value);
+            var science = Number(document.getElementById("txtScience").value);
+            var social = Number(document.getElementById("txtSocial").value);
+            marks.push(telugu);
+            marks.push(hindi);
+            marks.push(english);
+            marks.push(maths);
+            marks.push(science);
+            marks.push(social);
+            for (let i = 0; i < marks.length; i++) {
+                if (marks[i] >= 90) {
+                    grades.push("O");
+
+                } else if (marks [i] >= 80 && marks[i] < 90) {
+                    grades.push("A");
+
+                } else if ( marks[i]  >= 70 &&  marks[i]  < 80) {
+                    grades.push("B");
+                } else if ( marks[i]  >= 60 &&  marks[i]  < 70) {
+                    grades.push("c");
+                } else if ( marks[i]  >= 50 &&  marks[i]  < 60) {
+                    grades.push("D");
+                } else {
+                    grades.push("E");
+                }
+            }
+
+            document.getElementById("Telugu").innerHTML = `Telugu = ${grades[0]}`;
+            document.getElementById("Hindi").innerHTML = `Hindi = ${grades[1]}`;
+            document.getElementById("English").innerHTML = `English = ${grades[2]}`;
+            document.getElementById("Maths").innerHTML = `Maths = ${grades[3]}`;
+            document.getElementById("Science").innerHTML = `Science = ${grades[4]}`;
+            document.getElementById("Social").innerHTML = `Social = ${grades[5]}`;
+        }
+
+    </script>
+</head>
+
+<body>
+    <label>Telugu</label>
+    <input type="text" id="txtTelugu"><br><br>
+    <label>Hindi</label>
+    <input type="text" id="txtHindi"><br><br>
+    <label>English</label>
+    <input type="text" id="txtEnglish"><br><br>
+    <label>Maths</label>
+    <input type="text" id="txtMaths"><br><br>
+    <label>Science</label>
+    <input type="text" id="txtScience"><br><br>
+    <label>Social</label>
+    <input type="text" id="txtSocial"><br><br>
+    <p id="Telugu"></p>
+    <p id="Hindi"></p>
+    <p id="English"></p>
+    <p id="Maths"></p>
+    <p id="Science"></p>
+    <p id="Social"></p>
+    <button onclick="onClickCheckgrade()">Check Grade</button>
+</body>
+
+</html>

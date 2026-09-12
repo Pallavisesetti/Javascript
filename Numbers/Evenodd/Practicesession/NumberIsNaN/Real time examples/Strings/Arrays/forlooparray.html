@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+        let fruits=[]
+        function onClickPush(){
+            debugger;
+            let Fruits=document.getElementById("txtFruits").value;
+            document.getElementById("txtFruits").value=" ";
+            fruits.push(Fruits);
+            alert(fruits);
+            alert(fruits.length);
+            for(let fruit of fruits){
+                alert(fruit);
+            }
+            fruits.forEach(function(item)){
+                console.log(item); 
+            }
+        
+            }
+            
+          
+        
+          function onClickCheckloop(){
+            debugger;
+            for(let i=0;i<fruits.length;i++){
+             document.getElementById("result").innerHTML +=`${i+1} ${fruits[i]} <br/>`
+
+            }
+          }
+        
+        
+        
+    </script>
+    </head>
+    <body>
+        <label>Fruits</label>
+        <input type="text" id="txtFruits">
+        <button onclick="onClickPush()">Push</button>
+        <button onclick="onClickCheckloop()">Check loop</button>
+        <p id="result"></p>
+        <p id="result1"></p>
+    </body>
+</html>
